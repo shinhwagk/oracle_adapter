@@ -44,3 +44,15 @@ Indexes:
     "metrics_values_time_idx" btree ("time" DESC)
 Number of child tables: 1 (Use \d+ to list them.)
 ```
+
+- index
+```
+ Schema |                 Name                  | Type  |  Owner   |     Table      
+--------+---------------------------------------+-------+----------+----------------
+ public | metrics_labels_labels_idx             | index | postgres | metrics_labels
+ public | metrics_labels_metric_name_idx        | index | postgres | metrics_labels
+ public | metrics_labels_metric_name_labels_key | index | postgres | metrics_labels
+ public | metrics_labels_pkey                   | index | postgres | metrics_labels
+ public | metrics_values_labels_id_idx          | index | postgres | metrics_values
+ public | metrics_values_time_idx               | index | postgres | metrics_values
+```
